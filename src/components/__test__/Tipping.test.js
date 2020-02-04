@@ -12,7 +12,7 @@ const mockedData = {
 describe('Componentes - Tipping', () => {
   it('Should render correctly', () => {
     const { getByText } = render(<Tipping userId={mockedData.userId} users={mockedData.users} />);
-    expect(getByText('Laura is tipping...')).toBeInTheDocument();
+    expect(getByText('Rob is tipping...')).toBeInTheDocument();
     expect(Tipping).toMatchSnapshot();
   });
 });
