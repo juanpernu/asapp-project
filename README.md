@@ -10,6 +10,21 @@ Chat front-end application for https://asapp.com/.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## References / Alternatives
+
+* [Whatsapp](https://www.whatsapp.com/)
+  * Very good reference, functionality-wise is very close to what we need to achieve.
+* [Slack](https://slack.com/intl/en-ar/)
+  * Example UX alternative to Whatsapp.
+
+## Technologies
+
+* [React](https://facebook.github.io/react/)
+* [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+  * For Managing the state of the app
+* [Sass](https://sass-lang.com/)
+  * Selected because it helps keep large stylesheets well-organized.
+
 ## Available Scripts
 In the project directory, you can run:
 
