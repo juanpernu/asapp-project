@@ -7,7 +7,7 @@ import Message from './Message';
 /**
  * Stateless Component that draw the box where
  * the messages are listed.
- * @param {String} messages
+ * @param {Array} messages
  * @param {Object} user
  */
 const MessageList = ({ messages, user }) => {
