@@ -11,10 +11,10 @@ import { ChatContext } from '../context/chatContext';
  * @param {Object} user
  */
 const UserHeader = ({ user }) => {
-  const { tipping, userTipping, users } = useContext(ChatContext);
+  const { users, whoIsTipping } = useContext(ChatContext);
   const { image_profile, name, id } = user;
-  const showIsTipping = tipping && id !== userTipping;
-  
+  const showIsTipping = whoIsTipping[id];
+
   return (
     <div className="user-header">
       <img className="user-header--avatar" src={image_profile} alt={name} height="42" width="42" />

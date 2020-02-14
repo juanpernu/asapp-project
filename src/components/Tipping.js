@@ -1,6 +1,5 @@
 /** React dependencies */
 import React from "react";
-
 /** Component dependencies */
 import { filterTippingUser } from '../utils';
 

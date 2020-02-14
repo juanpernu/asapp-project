@@ -42,7 +42,7 @@ const SendMessageForm = ({ userId }) => {
     }
 
     setMessage({ text: '' });
-    isTipping(false, null);
+    isTipping(false, userId);
   };
   
 

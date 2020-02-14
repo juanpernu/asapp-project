@@ -30,11 +30,11 @@ class ChatProvider extends Component {
           messages: [...this.state.messages, newMessage],
         })
       },
-      tipping: false,
-      userTipping: null,
+      whoIsTipping: {},
       messageSeen: false,
       seeignMessage: () => this.setState({ messageSeen: !this.state.messageSeen }),
-      isTipping: (value, userId) => this.setState({ tipping: value, userTipping: userId }),
+      isTipping: (value, userId) => this.setState({ whoIsTipping: { ...this.state.whoIsTipping, [userId]: value }}),
+      cleanTippingArray: (userId) => this.cleanHowIsTipping(userId),
       checkSawMessage: () => this.sawMessage(this.state.messages),
     };
     this.sawMessage = this.sawMessage.bind(this);
